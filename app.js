@@ -1,12 +1,12 @@
-const ingreso = prompt('ingresa tu edad');
+const edad = prompt('ingresa tu edad');
 const miPromesa = new Promise((resolve, reject) => {
 
-  if(ingreso >= 18 ){
-    resolve(`su edad es: ${ingreso}, puedes ingresar al establecimiento `);
+  if(edad >= 18 ){
+    resolve(`su edad es: ${edad}, puedes ingresar al establecimiento `);
 
-  }else if(ingreso <= 17){
-    reject(`tu edad es:${ingreso} no puede ingresar ya que eres menor de edad`)
-  }else if (ingreso != ingreso.isNan){}
+  }else if(edad <= 17){
+    reject(`tu edad es:${edad} no puede ingresar ya que eres menor de edad`)
+  }else if (edad != edad.isNan){}
    reject(`Edad no validad`)
 
 });
